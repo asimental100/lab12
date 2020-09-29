@@ -5,6 +5,10 @@ const app = require('../lib/app');
 
 describe('tardygram routes', () => {
   beforeEach(() => {
-    return pool.query(fs.readFileSync('./sql/setup.sql', 'utf-8'))
+    return pool.query(fs.readFileSync('./sql/setup.sql', 'utf-8'));
+  });
+
+  it('shoud return true', () => {
+    expect(true).toEqual(true);
   });
 });
